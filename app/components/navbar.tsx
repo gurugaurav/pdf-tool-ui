@@ -3,7 +3,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
-import LOGO from "../public/log.svg"
+import LOGO from "../../public/log.svg"
+import Loginlink from "./login";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -67,7 +68,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
+        
       <div
         onClick={() => setNav(!nav)}
         className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"

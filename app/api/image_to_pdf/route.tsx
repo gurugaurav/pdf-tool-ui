@@ -6,12 +6,12 @@ export const POST = async (req: NextResponse, res: NextResponse) => {
   const formData = await req.formData();
 
   
-  const file = formData.get("file") as File;
+  const files = formData.get("files") as File;
   const pageSize = formData.get("pageSize")?.toString() || 'a4';
   const orientationParam = formData.get("orientation")?.toString().toLowerCase() || 'portrait';
   const margin = Number(formData.get("margin")) || 0;
 
-  if (!file) {
+  if (!files) {
     return NextResponse.json({ error: "No files received." }, { status: 400 });
   }
 
