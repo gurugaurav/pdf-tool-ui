@@ -1,5 +1,5 @@
 Web Ui to Convert image to pdf, pdf to images, split pdf, merge pdf, compress pdf and other upcomig feature. 
-Backed of these services can be found in [this repo](https://github.com/gurugaurav/pdf-too).
+Backed of these services can be found in [this repo](https://github.com/gurugaurav/pdf-tools).
 
 ## Getting Started
 
